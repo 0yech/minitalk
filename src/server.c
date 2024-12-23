@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   server.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cheyo <cheyo@student.42.fr>                +#+  +:+       +#+        */
+/*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 23:06:01 by cheyo             #+#    #+#             */
-/*   Updated: 2024/12/21 13:03:19 by cheyo            ###   ########.fr       */
+/*   Updated: 2024/12/23 21:16:15 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ static void	get_data(int signum, siginfo_t *info, void *con)
 		g_c = 0;
 		bit = 7;
 	}
-	usleep(10);
+	usleep(50);
 	kill(info->si_pid, SIGUSR1);
 }
 
